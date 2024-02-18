@@ -1,6 +1,8 @@
 import "./App.css";
 import "./App.css";
+import Footer from "./component/footer/Footer";
 import Hero from "./component/hero/Hero";
+import Join from "./component/join/Join";
 import Plans from "./component/plans/Plans";
 import Programs from "./component/programs/Programs";
 import Reason from "./component/reason/Reason";
@@ -13,6 +15,8 @@ function App() {
       <Reason />
       <Plans />
       <Testimonial />
+      <Join />
+      {/* <Footer /> */}
     </div>
   );
 }
