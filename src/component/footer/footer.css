@@ -1,23 +1,38 @@
 .Footer-container {
   position: relative;
 }
+
 .Footer-container > hr {
   border: 1px solid var(--lightgray);
 }
-.footer {
+
+.footer,
+.logo-f {
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
   gap: 4rem;
   align-items: center;
   justify-content: center;
-  /* height: 20rem; */
 }
 
 .social-links {
-  display: flex;
-  gap: 4rem;
+  width: 2.5rem;
+  gap: 3rem;
+  padding: 2rem;
 }
-.logo-f {
-  width: 10rem;
+
+.logo-f > img {
+  width: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .logo-f > img {
+    width: 10rem;
+  }
+  .socail > img {
+    display: flex;
+  }
 }
