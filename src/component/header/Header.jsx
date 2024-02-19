@@ -26,6 +26,9 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
+          <span className="cancle-icons" onClick={() => setMenuOpened(false)}>
+            &#10060;
+          </span>
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
